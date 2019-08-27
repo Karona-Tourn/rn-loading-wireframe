@@ -1,0 +1,40 @@
+{
+  "name": "rn-loading-wireframe",
+  "version": "1.0.0",
+  "description": "Help showing loading wireframe effect",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karona-Tourn/rn-loading-wireframe.git"
+  },
+  "keywords": [
+    "rn-loading-wireframe",
+    "wireframe",
+    "rn-wireframe",
+    "react-native-loading-wireframe",
+    "react-native-wireframe"
+  ],
+  "author": "Karona Tourn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Karona-Tourn/rn-loading-wireframe/issues"
+  },
+  "homepage": "https://github.com/Karona-Tourn/rn-loading-wireframe#readme",
+  "peerDependencies": {
+    "react": "^16.6.3",
+    "react-native": "^0.58.6"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.9.0",
+    "jest": "24.9.0",
+    "metro-react-native-babel-preset": "0.56.0",
+    "react-test-renderer": "16.6.3"
+  }
+}
