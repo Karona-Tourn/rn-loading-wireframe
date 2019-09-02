@@ -1,6 +1,6 @@
 {
   "name": "rn-loading-wireframe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Help showing loading wireframe effect",
   "main": "src/index.js",
   "scripts": {
@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/Karona-Tourn/rn-loading-wireframe#readme",
   "peerDependencies": {
-    "react": ">=16.6.3",
-    "react-native": ">=0.58.6"
+    "react": ">=0.14.9",
+    "react-native": ">=0.23.1"
   },
   "dependencies": {
     "prop-types": "^15.7.2"
