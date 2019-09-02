@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 
 interface LoadingWireframeProps {
     lowestFadeOpacity: number;
@@ -7,5 +7,5 @@ interface LoadingWireframeProps {
     loading: boolean;
 }
 
-export default class LoadingWireframe extends React.Component<LoadingWireframeProps> {
+export default class LoadingWireframe extends Component<LoadingWireframeProps> {
 }
