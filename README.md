@@ -76,7 +76,3 @@ import LoadingWireframe from 'rn-loading-wireframe';
 | color             | string | `#bdc3c7` | Color of the loading wireframe     |
 | fadeDuration      | number | 1000      | Duration of fading blink           |
 | lowestFadeOpacity | number | 0.2       | The lowest opacity when fading out |
-
-### Note
-
-- It cannot show unless you don't specify width and height in styles of its wrapped components.
