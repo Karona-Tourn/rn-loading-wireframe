@@ -25,7 +25,7 @@ npm install rn-loading-wireframe --save
 - Using **Yarn**
 
 ```bash
-yarn add rn-loading-wireframe --dev
+yarn add rn-loading-wireframe
 ```
 
 ## Example
@@ -37,17 +37,13 @@ import LoadingWireframe from 'rn-loading-wireframe';
   <Text
     style={{
       fontSize: 20,
-      fontWeight: 'bold',
-      width: 200,
-      height: 25
+      fontWeight: 'bold'
     }}>
     Loading Wireframe
   </Text>
   <Text
     style={{
-      marginTop: 5,
-      width: 400,
-      height: 20
+      marginTop: 5
     }}>
     It can help showing loading wireframe effect
   </Text>
@@ -76,3 +72,7 @@ import LoadingWireframe from 'rn-loading-wireframe';
 | color             | string | `#bdc3c7` | Color of the loading wireframe     |
 | fadeDuration      | number | 1000      | Duration of fading blink           |
 | lowestFadeOpacity | number | 0.2       | The lowest opacity when fading out |
+
+## License
+
+- [MIT](LICENSE)
