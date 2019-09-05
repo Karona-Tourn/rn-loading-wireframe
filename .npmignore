@@ -1,1 +1,4 @@
-examples
+.DS_Store
+node_modules/
+examples/
+*.lock
