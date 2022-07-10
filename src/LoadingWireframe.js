@@ -30,7 +30,8 @@ class LoadingWireframe extends React.Component {
     super(props);
     this.state = {
       timingValue: new Animated.Value(0.0),
-      targets: {}
+      targets: {},
+      subscription: null
     };
 
     const dimensions = Dimensions.get('screen');
@@ -41,11 +42,12 @@ class LoadingWireframe extends React.Component {
     if (this.props.loading) {
       this._startFade();
     }
-    Dimensions.addEventListener('change', this._onDimensionChanged);
+    this.setState({subscription: Dimensions.addEventListener('change', this._onDimensionChanged)});
   }
 
   componentWillUnmount() {
-    Dimensions.removeEventListener('change', this._onDimensionChanged);
+    this.state.subscription.remove();
+    this.setState({subscription: null});
   }
 
   _onDimensionChanged = ({ screen }) => {
@@ -136,14 +138,14 @@ class LoadingWireframe extends React.Component {
 }
 
 const Wireframe = ({
-  opacity,
-  color,
-  loading,
-  children,
-  size,
-  onLayout,
-  ...restProps
-}) => {
+                     opacity,
+                     color,
+                     loading,
+                     children,
+                     size,
+                     onLayout,
+                     ...restProps
+                   }) => {
   if (!loading || !React.isValidElement(children)) {
     return children;
   }
@@ -151,9 +153,9 @@ const Wireframe = ({
   let wireframeStyle: ViewStyle = !children.props.style
     ? defaultStyles.wireframe
     : {
-        ...StyleSheet.flatten(children.props.style),
-        ...defaultStyles.wireframe
-      };
+      ...StyleSheet.flatten(children.props.style),
+      ...defaultStyles.wireframe
+    };
 
   const hasProvidedFixedSize =
     wireframeStyle.width !== null &&
